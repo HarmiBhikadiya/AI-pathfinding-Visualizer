@@ -1,0 +1,8 @@
+*.exe
+*.dll
+*.o
+.vscode/
+
+lib/
+include/GLFW/
+include/GL/
