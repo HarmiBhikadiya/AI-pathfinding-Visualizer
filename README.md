@@ -1,124 +1,148 @@
-﻿🚀 Weighted Pathfinding Visualizer
+﻿# 🚀 Weighted Pathfinding Visualizer
 
+<p align="center">
+  <strong>Real-Time Pathfinding Visualizer using C++, OpenGL, BFS, and Dijkstra on Weighted Grids</strong>
+</p>
 
-Real-Time Pathfinding Visualizer using C++, OpenGL, BFS, and Dijkstra on Weighted Grids.
+---
 
-
-
-📌 Overview
+## 📌 Overview
 
 This project is an interactive **pathfinding visualizer** built using **C++** and **OpenGL (GLUT)**.
 
 It demonstrates how graph traversal and shortest-path algorithms work in real time on a weighted grid environment.
 
+### Features:
+- Select start and end nodes
+- Create obstacles
+- Visualize BFS and Dijkstra algorithms
+- Observe node exploration step-by-step
+- Highlight the final shortest path
 
-Features:
-• Select start and end nodes
-• Create obstacles
-• Visualize BFS and Dijkstra algorithms
-• Observe node exploration step-by-step
-• Highlight the final shortest path
+---
 
+## ✨ Features
 
+- 🎮 Interactive grid-based UI
+- 🟢 Start node selection
+- 🔴 End node selection
+- ⚫ Obstacle generation
+- 🔵 Real-time visited-node animation
+- 🟡 Final shortest-path highlighting
+- ⚡ Adjustable animation speed
+- 📊 Weighted graph implementation
+- 🧠 BFS and Dijkstra visualization
+- 🎨 OpenGL-based rendering
 
-✨ Features
+---
 
-• 🎮 Interactive grid-based UI  
-• 🟢 Start node selection  
-• 🔴 End node selection  
-• ⚫ Obstacle generation  
-• 🔵 Real-time visited-node animation  
-• 🟡 Final shortest-path highlighting  
-• ⚡ Adjustable animation speed  
-• 📊 Weighted graph implementation  
-• 🧠 BFS and Dijkstra visualization  
-• 🎨 OpenGL-based rendering  
+## 🛠 Tech Stack
 
+| Technology | Purpose |
+|------------|----------|
+| **C++** | Core Programming Language |
+| **OpenGL / GLUT** | Graphics Rendering |
+| **STL** | Data Structures (`queue`, `priority_queue`) |
+| **OOP** | Modular Class Design |
 
+---
 
-🛠 Tech Stack
+## 🧠 Algorithms Implemented
 
-TechnologyPurposeC++Core Programming LanguageOpenGLGraphics RenderingSTLData StructuresOOPModular Class Design
+### 🔹 Breadth First Search (BFS)
 
+- Uses `queue`
+- Explores nodes level-by-level
+- Suitable for unweighted traversal
 
+### 🔹 Dijkstra’s Algorithm
 
+- Uses `priority_queue`
+- Computes shortest weighted path
+- Handles varying traversal costs efficiently
 
+---
 
+## 🎮 Controls
 
-🧠 Algorithms Implemented
+| Key | Action |
+|-----|--------|
+| `1` | Select Dijkstra Algorithm |
+| `2` | Select BFS Algorithm |
+| `A` | Run Algorithm |
+| `C` | Clear Grid |
+| `+ / -` | Increase / Decrease Speed |
+| `Mouse Click` | Set Start, End, and Obstacles |
 
-🔹 Breadth First Search (BFS)
+---
 
-o Uses `queue`
-o Explores nodes level-by-level
-o Suitable for unweighted traversal
+## 🎨 Node Color Representation
 
-🔹 Dijkstra’s Algorithm
+| Color | Meaning |
+|-------|---------|
+| 🟢 Green | Start Node |
+| 🔴 Red | End Node |
+| ⚫ Black | Obstacle |
+| 🔵 Blue | Visited Node |
+| 🟡 Yellow | Final Path |
+| ⚪ White | Unvisited Node |
 
-o Uses `priority_queue`
-o Computes shortest weighted path
-o Handles varying traversal costs efficiently
+---
 
+# 🖼 Screenshots
 
+## Grid Initialization
 
-🎮 Controls
-	
-KeyAction1Select Dijkstra Algorithm2Select BFS AlgorithmARun AlgorithmCClear Grid+/-Increase / Decrease SpeedMouse ClickSet Start, End, and Obstacles
+![Grid](screenshots/grid.png)
 
-🎨 Node Colour Representation
+---
 
-ColourMeaning🟢 GreenStart Node      🔴 RedEnd Node ⚫ BlackObstacle      🔵 BlueVisited Node   🟡 YellowFinal Path⚪ WhiteUnvisited Node
+## BFS Visualization
 
+![BFS](screenshots/bfs.png)
 
-🖼 Screenshots
+---
 
-Grid Initialization
+## Dijkstra Visualization
 
+![Dijkstra](screenshots/dijkstra.png)
 
+---
 
-BFS Visualization
+## ⚙️ How to Run
 
+### Windows (MinGW)
 
-
-Dijkstra Visualization
-
-
-
-
-⚙️ How to Run
-
-      Windows (MinGW)
-
-bash
+```bash
 g++ src/main.cpp -o app -lfreeglut -lopengl32 -lglu32
 ./app
+```
 
-
-      Linux
+### Linux
 
 ```bash
 g++ src/main.cpp -o app -lglut -lGL -lGLU
 ./app
 ```
 
+---
 
+## 📚 Concepts Used
 
-📚 Concepts Used
+- Graph Traversal
+- Weighted Shortest Path
+- Event-Driven Programming
+- Real-Time Rendering
+- Animation Loop
+- Coordinate Mapping
+- Path Reconstruction
+- Object-Oriented Programming
 
-o Graph Traversal
-o Weighted Shortest Path
-o Event-Driven Programming
-o Real-Time Rendering
-o Animation Loop
-o Coordinate Mapping
-o Path Reconstruction
-o Object-Oriented Programming
+---
 
+## 📂 Project Structure
 
-
-📂 Project Structure
-
-
+```text
 AI-pathfinding-visualizer/
 │
 ├── src/
@@ -131,36 +155,35 @@ AI-pathfinding-visualizer/
 │
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
-💡 Future Improvements
+## 💡 Future Improvements
 
-o A* Algorithm Support
-o Drag-to-draw Obstacles
-o Right-click Eraser
-o GUI Controls
-o Diagonal Movement
-o Performance Statistics
+- A* Algorithm Support
+- Drag-to-draw Obstacles
+- Right-click Eraser
+- GUI Controls
+- Diagonal Movement
+- Performance Statistics
 
+---
 
-
-🌟 Learning Outcomes
+## 🌟 Learning Outcomes
 
 This project strengthened my understanding of:
 
-o Data Structures & Algorithms
-o Graph Theory
-o OpenGL Rendering
-o Event-Driven Programming
-o Animation Systems
-o Object-Oriented Design
-o Git & GitHub Workflow
+- Data Structures & Algorithms
+- Graph Theory
+- OpenGL Rendering
+- Event-Driven Programming
+- Animation Systems
+- Object-Oriented Design
+- Git & GitHub Workflow
 
+---
 
-
-📬 Feedback
+## 📬 Feedback
 
 Suggestions and improvements are always welcome! 🚀
-
