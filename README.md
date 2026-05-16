@@ -93,7 +93,7 @@ It demonstrates how graph traversal and shortest-path algorithms work in real ti
 
 ## Grid Initialization
 
-![Grid](screenshots/gridinit.png)
+![Grid](gridinit.png)
 
 ---
 
